@@ -8,6 +8,9 @@ import openai
 # Configurando o API Client
 openai.api_key = 'your-api-key'
 
+#  Escolhendo um modelo pré-treinado; listando-os
+models = openai.Model.list()
+print(models['data'])
 
 # Definindo o prompt
 prompt = "What I need study to develop my career in Python?"
