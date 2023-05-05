@@ -1,4 +1,5 @@
 # pip install openai
+
 import openai
 
 ## Terminal: export OPENAI_API_KEY='your-api-key'
@@ -16,7 +17,7 @@ response = openai.Completion.create(
     engine="davinci"
     prompt=prompt,
     max_tokens=50
-);
+)
 
 # Imprimindo o texto gerado
 print(response.choices[0].text)
