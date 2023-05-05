@@ -2,11 +2,10 @@
 
 import openai
 
-## Terminal: export OPENAI_API_KEY='your-api-key'
-
-
 # Configurando o API Client
 openai.api_key = 'your-api-key'
+
+## Terminal: export OPENAI_API_KEY='your-api-key'
 
 #  Escolhendo um modelo pré-treinado; listando-os
 models = openai.Model.list()
